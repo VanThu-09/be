@@ -9,7 +9,7 @@ const webRoute = require('./routes/web')
 
 
 app.use(morgan('combined'))
-app.use('/2', webRoute)
+app.use('/', webRoute)
 configViewEngine(app)
 
 app.listen(port, hostname, () => {
